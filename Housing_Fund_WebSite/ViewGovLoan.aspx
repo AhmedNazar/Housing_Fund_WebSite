@@ -89,9 +89,10 @@
                                                 <asp:Label ID="Label1" runat="server" Text="اسم الحصة"></asp:Label>
                                                 <asp:DropDownList ID="ddl_Loan" ValidationGroup="step1" CssClass="form-control " runat="server" DataSourceID="SqlDataSource1" DataTextField="lo_name" DataValueField="lo_id">
                                                 </asp:DropDownList>
-                                                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:CS %>' SelectCommand="SELECT * FROM [Loan_Table] WHERE ([gov_id] = @gov_id)">
+                                                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:CS %>' SelectCommand="SELECT * FROM [Loan_Table] WHERE (([gov_id] = @gov_id) AND ([status_id] = @status_id))">
                                                     <SelectParameters>
                                                         <asp:ControlParameter ControlID="ddl_gov_id" PropertyName="SelectedValue" Name="gov_id" Type="Int32"></asp:ControlParameter>
+                                                        <asp:Parameter DefaultValue="1" Name="status_id" Type="Int32"></asp:Parameter>
                                                     </SelectParameters>
                                                 </asp:SqlDataSource>
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ValidationGroup="step1" ControlToValidate="ddl_Loan" ForeColor="Red" runat="server" ErrorMessage="الرجاء ملئ الحقل"></asp:RequiredFieldValidator>

@@ -1938,7 +1938,7 @@ form.search-form-opened .btn.submit {
 	margin-right: 5px;
 	text-shadow: none;
 	float: left;
-	line-height: 24px;
+	line-height: 20px;
 }
 .sidemenu-container .sidemenu.sidemenu-closed>li>a>i {
 	float: none;
@@ -1947,7 +1947,7 @@ form.search-form-opened .btn.submit {
 .sidemenu-container .sidemenu>li>a>i.glyphicon,
 .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li>a>[class^=icon-],
 .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li>a>i.glyphicon {
-	margin-left: 1px;
+	margin-left: 5px;
 	margin-right: 4px
 }
 .sidemenu-container-fixed .sidemenu-container .sidemenu>li>a,

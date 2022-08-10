@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admins_AdminMasterPage" %>
 
-<%@ Register Src="~/UserControl/RightSideBar.ascx" TagPrefix="uc1" TagName="RightSideBar" %>
+<%@ Register Src="~/Admins/AdminUserControl/AdminRightSideBar.ascx" TagPrefix="uc1" TagName="AdminRightSideBar" %>
+
+
 
 
 <!DOCTYPE html>
@@ -319,7 +321,7 @@
             <!-- start page container -->
             <div class="page-container">
                 <!-- start sidebar menu -->
-                <uc1:RightSideBar runat="server" ID="RightSideBar" />
+                <uc1:AdminRightSideBar runat="server" ID="AdminRightSideBar" />
                 <!-- end sidebar menu -->
                 <!-- start page content -->
                 <div class="page-content-wrapper">
